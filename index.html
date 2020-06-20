@@ -72,7 +72,7 @@
                 var keyword = document.getElementById("keyword").value
 
                 var filteredItems = []
-                for(var j = 0; x <items.length; j++){
+                for(var j = 0; j <items.length; j++){
                     if(items[j][1].toLowerCase().includes(keyword.toLowerCase())){
                         filteredItems.push(items[j])
                     }
@@ -89,7 +89,7 @@
             }
             return filteredItems
         }
-            var inputKeyword = document.getElementById("keyword")
+            var inputKeyword = document.getElementById("formItem")
             inputKeyword.addEventListener("keyup", function(e){
                 var keyword = e.target.Value
 
